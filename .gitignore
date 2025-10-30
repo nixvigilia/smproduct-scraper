@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Playwright
+.playwright/
+*.zip
+
+# Output files (scraped data)
+products.json
+products.csv
+*.csv
+# Keep package.json and other config files
+!package.json
+!package-lock.json
+!*.config.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+

@@ -1,0 +1,22 @@
+{
+  "name": "smmarkets-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js product scraper for SM Markets category pages",
+  "scripts": {
+    "start": "node src/scrape-sm.js",
+    "scrape": "node src/scrape-sm.js",
+    "playwright:install": "npx playwright install chromium",
+    "scrape:bonus": "node src/scrape-sm.js --url https://smmarkets.ph/only-in-sm-markets.html --out products.json",
+    "scrape:headful": "node src/scrape-sm.js --headful --url https://smmarkets.ph/only-in-sm-markets.html --out products.json",
+    "convert": "node src/convert-to-csv.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.48.2",
+    "csv-writer": "^1.6.0",
+    "yargs": "^17.7.2"
+  }
+}
+
+
